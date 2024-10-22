@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina pessoal</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulário de inscrição - Torneio de ciclismo municipal</h1>
+    </header>
+    <form>
+      <label for="user_name"> Nome do participante:</label>
+      <input id="user_name" type="text" required> 
+      <br/> <br/> 
+      
+      <label for="user_date"> Data de nascimento:</label>
+      <input id="user_date" type="date"> 
+      <br/>
+
+      <h3>Escolha sua modalidade</h3>
+      <label for="user_modality_bike"> Mountain Bike</label>
+      <input id="user_modality_bike" type="radio" name="option" required>
+      <label for="user_modality_cycling"> Ciclismo de Estrada</label> 
+      <input id="user_modality_cycling" type="radio" name="option" required> 
+      <br/> <br/> 
+      
+      <h3>Nível de experiência do participante</h3>
+      <input id="user_experience_beginner" type="radio" name="experience_option" required>
+      <label for="user_experience_beginner"> Iniciante </label>
+      <input id="user_experience_intermediate" type="radio" name="experience_option" required>
+      <label for="user_experience_intermediate"> Intermediária </label>
+      <input id="user_experience_advanced" type="radio" name="experience_option" required>
+      <label for="user_experience_advanced"> Avançada </label>
+      <br/> <br/>
+
+      <h3>Escolha sua alimentação</h3>
+      <label for="water"> Água</label>
+      <input id="water" type="checkbox">
+      <label for="fast"> Lanche rápido</label>
+      <input id="fast" type="checkbox">
+      <label for="coke"> Coca zero</label>
+      <input id="coke" type="checkbox">
+      <label for="protein"> Barra de proteína</label>
+      <input id="protein" type="checkbox">
+      <br/> <br/>
+
+      <h3>Termos</h3>
+      <label for="terms">Eu li e concordo com os termos de uso</label>
+      <input id="terms" type="checkbox">
+      <br/> <br/>
+      
+      <input id="send" type="submit" value="Enviar">
+    </form>
+  
+  </body>
+</html>
