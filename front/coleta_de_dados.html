@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Histórico</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulário de inscrição - Corrida Corpore</h1>
+    </header>
+    <form>
+      <label for="user_name"> Nome completo do participante:</label>
+      <br/>
+      <input id="user_name" type="text" required> 
+      <br/> <br/> 
+
+      <label for="user_data_time">Escolha sua data e horário:</label>
+      <br/>
+      <input id="user_date_time" type="datetime-local" min="2020-01-01" max="2024-10-17">
+      <br/> <br/>
+      
+      <label for="user_date"> Data de nascimento:</label>
+      <br/>
+      <input id="user_date" type="date" min="1920-01-01"> 
+      <br/> <br/> 
+        
+      <label for="user_number">Insira seu número de telefone:</label>
+      <br/>
+      <input id="user_number" type="tel" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="99-99999-9999"
+      <br/> <br/> <br>
+
+      <label for="user_email">Digite seu melhor e-mail:</label>
+      <br/>
+      <input id="user_email" type="email" placeholder="email@example.com">
+      <br/> <br/>
+
+      <label for="user_search">Pesquise mais informações sobre o evento:</label>
+      <br/>
+      <input id="user_search" type="search">
+      <br/> <br/>
+
+      <label for="user_satisfaction">Que nível você daria para a organização:</label>
+      <br/>
+      <input id="user_satisfaction" type="number" min="0" max="10">
+      <br/> <br/>
+
+      <label for="user_interest">Defina o grau de interesse no evento:</label>
+      <br/>
+      <input id="user_interest" type="range" min="0" max="10">
+      <br/>
+
+      <label for="user_term">Insira o termo de responsabilidade:</label>
+      <br/>
+      <input id="user_term" type="file">
+      <br/> <br/>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
