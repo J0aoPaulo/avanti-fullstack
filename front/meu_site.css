@@ -1,0 +1,18 @@
+body{
+    background-color:rgb(224, 111, 111);
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+#page_title{
+    color: black;
+}
+
+.first_paragraph{
+    color: red;
+}
+
+section{
+    color: blue;
+}
