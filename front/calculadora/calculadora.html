@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <script src="js/calculadora.js"></script>
+    <style>
+      /* Adicione o CSS aqui */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content button {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+      }
+
+      .dropdown-content button:hover {
+        background-color: #f1f1f1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calculadora</h1>
+
+    <label for="num1">Numero 1: </label>
+    <input id="num1" type="text" size="5" /> <br /><br />
+    <label for="num2">Numero 2: </label>
+    <input id="num2" type="text" size="5" /> <br /><br />
+
+    <div class="dropdown">
+      <button>Operações</button>
+      <div class="dropdown-content">
+        <button onclick="somar()">Somar</button>
+        <button onclick="subtrair()">Subtrair</button>
+        <button onclick="multiplicar()">Multiplicar</button>
+        <button onclick="dividir()">Dividir</button>
+      </div>
+    </div>
+    <br /><br /><br />
+
+    <label for="resultado">Resultado: </label>
+    <input id="resultado" size="5" disabled />
+  </body>
+</html>
