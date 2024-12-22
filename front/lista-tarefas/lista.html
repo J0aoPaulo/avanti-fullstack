@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Tarefas</title>
+    <style>
+        .concluida {
+            text-decoration: line-through;
+            color: gray;
+        }
+        button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Tarefas</h1>
+    <label for="nometarefa">Nome da tarefa: </label>
+    <input id="nometarefa" type="text">
+    <br><br>
+    <button id="btnadicionar">Adicionar</button>
+    <br><br>
+    <ul id="listadetarefas"></ul>
+
+    <script>
+        let btnadicionar = document.getElementById('btnadicionar');
+
+        btnadicionar.addEventListener('click', function() {
+            let nomeTarefa = document.getElementById('nometarefa').value;
+
+            if (nomeTarefa.trim() !== '') {
+                let listadetarefas = document.getElementById('listadetarefas');
+                let li = document.createElement('li');
+                li.textContent = nomeTarefa;
+
+                let btnRemover = document.createElement('button');
+                btnRemover.textContent = 'Remover';
+                btnRemover.addEventListener('click', function() {
+                    li.classList.add('concluida');
+                });
+
+                li.appendChild(btnRemover);
+                listadetarefas.appendChild(li);
+                document.getElementById('nometarefa').value = '';
+            }
+        });
+    </script>
+</body>
+</html>
