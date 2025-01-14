@@ -1,12 +1,10 @@
-import { useState } from 'react'
-import Pokemon from './components/pokemon'
+import Emoji from './components/emojiChange'
+import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Pokemon/>
+      <Emoji />
     </>
   )
 }
