@@ -1,12 +1,15 @@
-import Emoji from './components/emojiChange'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MostrarPokemon from './components/MostrarPokemon';
 
-function App() {
+const App = () => {
   return (
-    <>
-      <Emoji />
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/exibirpokemon/:numero" element={<MostrarPokemon />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
